@@ -202,7 +202,7 @@ function genNumber(number,variation)
     number = number * 1000
     mult = true
     ret = variation*0.01*math.abs(number)
-    ret = number + math.random(-ret,ret)
+    ret = number + math.random(math.floor(-ret),math.floor(ret))
     ret = ret / 1000
     return ret
 end
