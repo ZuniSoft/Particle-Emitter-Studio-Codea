@@ -13,10 +13,10 @@ t = 0.0
 lastGen = 0.0
 fps = 0
 frameCount = 0
-smokeButtonPos = vec2(WIDTH - 60,90)
-flameButtonPos = vec2(WIDTH - 170,90)
-dustButtonPos = vec2(WIDTH - 60,150)
-trailButtonPos = vec2(WIDTH - 170,150)
+smokeButtonPos = vec2(WIDTH - 60, 150)
+flameButtonPos = vec2(WIDTH - 60, 200)
+dustButtonPos = vec2(WIDTH - 60, 250)
+trailButtonPos = vec2(WIDTH - 60, 100)
 anim = false
 animAngle = 0
 
@@ -85,7 +85,7 @@ function draw()
 end
 
 function drawButtons()
-    text("Presets:",WIDTH - 120,190)
+    text("Presets:",WIDTH - 65, 300)
     font("Baskerville-Bold")
     fontSize(30)
     drawButton(smokeButtonPos.x,
@@ -139,10 +139,10 @@ function drawButton(x,y,caption)
     font("ArialRoundedMTBold")
     sprite(asset.builtin.Cargo_Bot.Dialogue_Button,x,y)
     fill(84, 84, 84, 255)
-    fontSize(30)
+    fontSize(24)
     text(caption,x+1,y+1)
     fill(255)
-    fontSize(30)
+    fontSize(24)
     text(caption,x,y)
 end
 
